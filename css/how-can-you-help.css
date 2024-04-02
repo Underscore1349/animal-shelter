@@ -1,0 +1,1355 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.submenu {
+    z-index: 100;
+}
+
+.how-can-you-help-button,
+.how-can-you-help-donate-button,
+.find-a-friend-button,
+.pick-up-a-pet-popup-button,
+.humanitarian-assistance-button {
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    width: 250px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #fff;
+    margin-top: 100px;
+    z-index: 2;
+    font-family: GilroyBold, sans-serif;
+}
+
+.pick-up-a-pet-popup-button {
+    color: #595959;
+    border: 2px solid #595959;
+}
+
+.humanitarian-assistance-buttons {
+    display: flex;
+    row-gap: 30px;
+}
+
+.how-can-you-help-popup,
+.humanitarian-assistance-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: rgb(198, 197, 197);
+    z-index: 999;
+    border-radius: 10px;
+}
+
+#humanitarian-assistance-other-popup,
+#humanitarian-assistance-cereal-popup,
+#humanitarian-assistance-food-popup {
+    width: 50%;
+    height: 60%;
+}
+
+
+#humanitarian-assistance-medicines-popup {
+    width: 50%;
+    height: 90vh;
+}
+
+.humanitarian-assistance-food-list-popup,
+.humanitarian-assistance-cereal-list-popup,
+.humanitarian-assistance-other-list-popup {
+display: flex;
+    flex-direction: column;
+ margin-bottom: 70px;
+    font-size: 18px;
+}
+
+.humanitarian-assistance-medicines-list-popup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.popup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(198, 197, 197);
+    padding: 20px;
+    border-radius: 5px;
+    font-family: GilroyBold, sans-serif;
+    font-size: 20px;
+    color: #595959;
+}
+
+.close-popup {
+    position: absolute;
+    top: -6%;
+    right: -3%;
+    cursor: pointer;
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+    color: #595959;
+    z-index: 2;
+}
+
+.close-humanitarian-assistance-medicines-popup {
+    position: absolute;
+    top: -3%;
+    right: -3%;
+}
+.popup-content-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.popup-content-items svg {
+    width: 45px;
+    height: 45px;
+}
+
+
+.donate-popup,
+.pick-up-a-pet-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 65%;
+    background-color: rgb(198, 197, 197);
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.donate-popup-content,
+.pick-up-a-pet-popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(198, 197, 197);
+    padding: 20px;
+    border-radius: 5px;
+    font-family: GilroyBold, sans-serif;
+    font-size: 20px;
+    color: #595959;
+}
+
+.donate-popup-content-title,
+.pick-up-a-pet-popup-content-title,
+.how-can-you-help-popup-content-title {
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+
+.humanitarian-assistance-medicines-popup-content-title {
+    margin-bottom: 0;
+}
+
+
+.donate-popup-content-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+    /*width: 100%;*/
+    /*flex-wrap: wrap;*/
+
+}
+
+.donate-popup-qrcode {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+}
+
+.donate-popup-qrcode img {
+    width: 100%;
+
+}
+
+.donate-popup-qrcode-description {
+    max-width: 500px;
+}
+
+.donate-popup-sber-card-description,
+.how-can-you-help-popup-description {
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+.humanitarian-assistance-medicines-popup-description {
+    margin-top: 10px;
+}
+
+.volunteer .container {
+    position: relative;
+    max-width: 1920px;
+    /*margin: 20px auto;*/
+    background-image: url("../images/volunteer-block.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    /*width: 100%; !* изменяем ширину на 100% для адаптивности *!*/
+    margin-bottom: 20px;
+}
+
+
+.volunteer .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 39, 39, 0.6); /* Устанавливаем прозрачность цвета фона */
+}
+
+
+.volunteer-block-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.volunteer-block-texts-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    max-width: 1170px;
+    font-family: TavolgaFree, sans-serif;
+    color: #fff;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.volunteer-block-texts-description {
+    font-size: 20px;
+    font-family: GilroyMedium, sans-serif;
+    width: 880px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+
+
+.pick-up-a-pet .container {
+    position: relative;
+    max-width: 1920px;
+    /*margin: 0 auto;*/
+    background-image: url("../images/pick-up-a-pet-block.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    /*width: 100%; !* изменяем ширину на 100% для адаптивности *!*/
+    margin-bottom: 20px;
+}
+
+.pick-up-a-pet .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 39, 39, 0.6); /* Устанавливаем прозрачность цвета фона */
+}
+
+
+.pick-up-a-pet-block-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.pick-up-a-pet-block-texts-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    max-width: 1170px;
+    font-family: TavolgaFree, sans-serif;
+    color: #fff;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.pick-up-a-pet-block-texts-description,
+.humanitarian-assistance-texts-description {
+    font-size: 20px;
+    font-family: GilroyMedium, sans-serif;
+    width: 880px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+
+
+
+.parallax {
+    background-image: url("../images/parallax.png");
+    height: 700px;
+    /*width: 100%;*/
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+}
+.parallax .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    z-index: 2;
+}
+
+
+.humanitarian-assistance-content {
+    display: flex;
+    justify-content: center;
+}
+
+/*.humanitarian-assistance {*/
+/*    padding: 60px 0;*/
+/*    background: #edece7;*/
+/*}*/
+
+
+.humanitarian-assistance-title {
+    display: flex;
+    align-self: center;
+    font-size: 55px;
+    max-width: 1170px;
+    font-family: TavolgaFree, sans-serif;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+/*.humanitarian-assistance-block {*/
+/*    display: flex;*/
+/*    !*align-items: center; !* Выравнивание элементов по вертикали *!*!*/
+/*    justify-content: space-evenly;*/
+/*    !*column-gap: 30px;*!*/
+/*    column-gap: 50px;*/
+/*}*/
+
+.humanitarian-assistance-block-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+
+/*.humanitarian-assistance-texts-description {*/
+/*    font-size: 20px;*/
+/*    font-family: GilroyMedium, sans-serif;*/
+/*    width: 880px;*/
+/*    margin-bottom: 20px;*/
+/*    color: #fff;*/
+/*    display: flex;*/
+/*    align-self: center;*/
+/*    z-index: 1;*/
+/*}*/
+
+.humanitarian-assistance-buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.humanitarian-assistance-button {
+    margin-top: 0;
+}
+
+.humanitarian-assistance-block-title:last-child {
+    margin: 110px 0 0 0;
+
+}
+
+.humanitarian-assistance-block-descriptions {
+    font-size: 20px;
+    font-family: GilroyMedium, sans-serif;
+    max-width: 420px;
+    color: #595959;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    /*align-self: flex-start;*/
+    /*text-align: start;*/
+    white-space: pre-line;
+    flex-wrap: wrap;
+}
+
+
+.humanitarian-assistance-fundraising-for-cereals {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 800px;
+    font-size: 21px;
+    font-family: GilroyMedium, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+    animation: blink 2s infinite;
+}
+
+.humanitarian-assistance-fundraising-for-cereals a {
+    color: inherit;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.donation {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.donation .container {
+    position: relative;
+    max-width: 1920px;
+    /*margin: 0 auto;*/
+    background-image: url("../images/donation-block.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    /*width: 100%; !* изменяем ширину на 100% для адаптивности *!*/
+
+}
+
+.donation .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 39, 39, 0.6); /* Устанавливаем прозрачность цвета фона */
+}
+
+
+.donation-block-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.donation-block-texts-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    max-width: 1170px;
+    font-family: TavolgaFree, sans-serif;
+    color: #fff;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.donation-block-texts-description {
+    font-size: 20px;
+    font-family: GilroyMedium, sans-serif;
+    width: 880px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+.pr .container {
+    position: relative;
+    max-width: 1920px;
+    background-image: url("../images/pr-block.jpg");
+    /*margin: 0 auto;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    /*width: 100%; !* изменяем ширину на 100% для адаптивности *!*/
+
+}
+
+.pr .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 39, 39, 0.6); /* Устанавливаем прозрачность цвета фона */
+}
+
+
+.pr-block-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.pr-block-texts-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    max-width: 1170px;
+    font-family: TavolgaFree, sans-serif;
+    color: #fff;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.pr-block-texts-description {
+    font-size: 20px;
+    font-family: GilroyMedium, sans-serif;
+    width: 880px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+/*  - 1699 */
+@media screen and (max-width: 1699px) {
+
+    .donate-popup-qrcode-description {
+        max-width: 400px;
+    }
+
+    .donate-popup {
+        width: 60%;
+        height: 60%;
+    }
+
+}
+
+/*  - 1399 */
+@media screen and (max-width: 1399px) {
+
+    .donate-popup-qrcode-description {
+        max-width: 350px;
+    }
+
+    .donate-popup {
+        width: 60%;
+        height: 60%;
+    }
+
+    .donate-popup-qrcode {
+        width: 250px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+    #close-humanitarian-assistance-food-popup,
+    #close-humanitarian-assistance-cereal-popup,
+    #close-humanitarian-assistance-other-popup {
+        position: absolute;
+        top: -6%;
+        right: -4%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .donate-popup-qrcode-description {
+        max-width: 250px;
+    }
+
+    .donate-popup {
+        width: 60%;
+        height: 60%;
+    }
+
+    .donate-popup-qrcode {
+        width: 250px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+
+}
+
+/* 999 - 1099 */
+@media screen and (max-width: 1099px) {
+
+    .pick-up-a-pet-popup-button {
+        margin-top: 35px;
+    }
+
+    .donate-popup-qrcode-description {
+        max-width: 500px;
+        margin-top: 30px;
+    }
+
+    .donate-popup-content-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donate-popup {
+        width: 50%;
+        height: 80%;
+    }
+
+
+}
+
+
+/* 899 - 999 */
+@media screen and (max-width: 999px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 700px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title {
+        font-size: 50px;
+        max-width: 600px;
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 19px;
+        max-width: 780px;
+    }
+
+    .donate-popup-qrcode {
+        width: 250px;
+        height: 250px;
+    }
+
+    .donate-popup-qrcode-description,
+    .donate-popup-sber-card-description {
+        max-width: 400px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    #humanitarian-assistance-other-popup,
+    #humanitarian-assistance-cereal-popup,
+    #humanitarian-assistance-food-popup {
+        width: 50%;
+        height: 70%;
+    }
+
+
+    #close-humanitarian-assistance-food-popup,
+    #close-humanitarian-assistance-cereal-popup,
+    #close-humanitarian-assistance-other-popup {
+        position: absolute;
+        top: -6%;
+        right: -6%;
+    }
+}
+
+
+/* 799 - 899 */
+@media screen and (max-width: 899px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 600px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title {
+        font-size: 45px;
+        max-width: 600px;
+        margin-bottom: 100px;
+
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description {
+        font-size: 18px;
+        max-width: 680px;
+        margin-bottom: 100px;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 18px;
+        max-width: 680px;
+        margin-bottom: 0;
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        margin: 0 0 140px;
+    }
+
+    .close-popup {
+        top: -6%;
+        right: -6%;
+    }
+
+
+
+    .how-can-you-help-popup-description {
+        margin-top: 0;
+        max-width: 800px;
+    }
+
+    .pick-up-a-pet-popup {
+        width: 60%;
+        height: 60%;
+    }
+
+    .donate-popup {
+        width: 80%;
+        height: 85%;
+    }
+
+}
+
+
+/* 699 - 799 */
+@media screen and (max-width: 799px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 500px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title {
+        font-size: 40px;
+        max-width: 600px;
+        margin-bottom: 0;
+
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description {
+        font-size: 17px;
+        max-width: 580px;
+        margin: 60px 0 80px;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 17px;
+        max-width: 580px;
+        margin: 60px 0 0 0 ;
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        padding: 11px;
+        font-size: 19px;
+        width: 240px;
+        margin: 0 0 170px;
+    }
+
+    .humanitarian-assistance-button {
+        padding: 11px;
+        font-size: 19px;
+        width: 240px;
+    }
+
+    .humanitarian-assistance-title {
+        margin-bottom: 80px;
+    }
+
+    #close-humanitarian-assistance-food-popup,
+    #close-humanitarian-assistance-cereal-popup,
+    #close-humanitarian-assistance-other-popup {
+        position: absolute;
+        top: -6%;
+        right: -9%;
+    }
+
+}
+
+
+/* 599 - 699 */
+@media screen and (max-width: 699px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 400px;
+    }
+
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title {
+        font-size: 35px;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .humanitarian-assistance-title {
+        margin-bottom: 0;
+    }
+
+    .humanitarian-assistance-content {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description,
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 16px;
+        max-width: 480px;
+        margin: 0 0 0 0;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        margin-bottom: 0;
+    }
+
+    .humanitarian-assistance-buttons {
+        margin: 100px 0;
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        padding: 12px;
+        font-size: 18px;
+        width: 240px;
+        margin: 80px 0 370px;
+    }
+
+    .humanitarian-assistance-button {
+        padding: 12px;
+        font-size: 18px;
+        width: 240px;
+    }
+
+    .close-popup {
+        top: -6%;
+        right: -8%;
+    }
+
+
+    .pick-up-a-pet-popup-content-title {
+        font-size: 21px;
+    }
+
+    .pick-up-a-pet-popup-description {
+        font-size: 18px;
+    }
+
+    #humanitarian-assistance-other-popup,
+    #humanitarian-assistance-cereal-popup,
+    #humanitarian-assistance-food-popup {
+        width: 55%;
+        height: 75%;
+    }
+
+    #close-humanitarian-assistance-food-popup,
+    #close-humanitarian-assistance-cereal-popup,
+    #close-humanitarian-assistance-other-popup {
+        position: absolute;
+        top: -6%;
+        right: -9%;
+    }
+
+}
+
+/* 499 - 599 */
+@media screen and (max-width: 599px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 420px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title {
+        font-size: 30px;
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description {
+        font-size: 16px;
+        max-width: 420px;
+        margin: 60px 0 60px;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 16px;
+        max-width: 420px;
+        margin: 0 0 30px 0;
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        padding: 11px;
+        font-size: 17px;
+        width: 240px;
+        margin: 0 0 320px;
+    }
+
+    .humanitarian-assistance-button {
+        padding: 11px;
+        font-size: 17px;
+        width: 240px;
+    }
+
+    .humanitarian-assistance-buttons {
+        display: flex;
+       flex-direction: column;
+        margin: 40px 0 0 0;
+    }
+
+
+
+    .how-can-you-help-popup {
+        width: 60%;
+        height: 60%;
+    }
+
+    .pick-up-a-pet-popup {
+        width: 60%;
+        height: 65%;
+    }
+
+    .pick-up-a-pet-popup-button {
+        padding: 12px;
+        font-size: 18px;
+        width: 220px;
+        margin-top: 35px;
+    }
+
+    .close-donate-popup {
+        top: -5%;
+        right: -8%;
+    }
+
+}
+
+
+/* 399 - 499 */
+@media screen and (max-width: 499px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 330px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title  {
+        font-size: 25px;
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description {
+        font-size: 14px;
+        max-width: 300px;
+        margin: 20px 0 40px;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 14px;
+        max-width: 300px;
+        margin: 20px 0 40px;
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        padding: 10px;
+        font-size: 16px;
+        width: 220px;
+        margin: 0 0 400px;
+    }
+
+    .close-popup {
+        top: -6%;
+        right: -12%;
+    }
+
+    .how-can-you-help-popup {
+        width: 60%;
+        height: 65%;
+    }
+
+    .pick-up-a-pet-popup {
+        width: 60%;
+        height: 70%;
+    }
+
+    .pick-up-a-pet-popup-button {
+        padding: 10px;
+        font-size: 17px;
+        width: 200px;
+        margin-top: 35px;
+    }
+
+    .humanitarian-assistance-button {
+        padding: 10px;
+        font-size: 17px;
+        width: 200px;
+    }
+
+    .humanitarian-assistance-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+
+
+    .donation-block-texts-title {
+        font-size: 20px;
+    }
+
+    .donate-popup-qrcode {
+        width: 200px;
+        height: 200px;
+    }
+
+    .donate-popup-qrcode-description,
+    .donate-popup-sber-card-description {
+        max-width: 300px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .close-donate-popup {
+        top: -5%;
+        right: -8%;
+    }
+
+    #close-humanitarian-assistance-food-popup,
+    #close-humanitarian-assistance-cereal-popup,
+    #close-humanitarian-assistance-other-popup {
+        position: absolute;
+        top: -6%;
+        right: -13%;
+    }
+
+    .humanitarian-assistance-food-list-popup,
+    .humanitarian-assistance-cereal-list-popup,
+    .humanitarian-assistance-other-list-popup {
+        font-size: 17px;
+    }
+
+
+}
+
+/*  - 399 */
+@media screen and (max-width: 399px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 320px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title,
+    .humanitarian-assistance-title {
+        font-size: 20px;
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description {
+        font-size: 14px;
+        max-width: 300px;
+        margin: 20px 0 40px;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 14px;
+        max-width: 300px;
+        margin: 20px 0 40px;
+
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        padding: 8px;
+        font-size: 14px;
+        width: 200px;
+        margin: 0 0 400px;
+    }
+
+    .humanitarian-assistance-button {
+        padding: 8px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .close-popup {
+        top: -6%;
+        right: -18%;
+    }
+
+    .pick-up-a-pet-popup-content-title {
+        font-size: 19px;
+    }
+
+    .pick-up-a-pet-popup-description {
+        font-size: 16px;
+    }
+
+    .pick-up-a-pet-popup-button {
+        padding: 8px;
+        font-size: 17px;
+        width: 180px;
+        margin-top: 35px;
+    }
+
+    .close-donate-popup {
+        top: -5%;
+        right: -12%;
+    }
+
+    .donate-popup {
+        width: 80%;
+        height: 90%;
+    }
+
+    #humanitarian-assistance-other-popup,
+    #humanitarian-assistance-cereal-popup,
+    #humanitarian-assistance-food-popup {
+        width: 55%;
+        height: 85%;
+    }
+
+    #close-humanitarian-assistance-food-popup,
+    #close-humanitarian-assistance-cereal-popup,
+    #close-humanitarian-assistance-other-popup {
+        position: absolute;
+        top: -5%;
+        right: -18%;
+    }
+
+
+}
+
+/*  - 349 */
+@media screen and (max-width: 349px) {
+
+    .volunteer .container,
+    .pick-up-a-pet .container,
+    .donation .container,
+    .pr .container {
+        height: 320px;
+    }
+
+    .volunteer-block-texts-title,
+    .pick-up-a-pet-block-texts-title,
+    .donation-block-texts-title,
+    .pr-block-texts-title {
+        font-size: 18px;
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .volunteer-block-texts-description,
+    .pick-up-a-pet-block-texts-description,
+    .donation-block-texts-description,
+    .pr-block-texts-description {
+        font-size: 13px;
+        max-width: 250px;
+        margin: 20px 0 40px;
+    }
+
+    .humanitarian-assistance-fundraising-for-cereals {
+        font-size: 13px;
+        max-width: 250px;
+        margin: 20px 0 40px;
+    }
+
+    .how-can-you-help-button,
+    .find-a-friend-button,
+    .how-can-you-help-donate-button {
+        padding: 8px;
+        font-size: 14px;
+        width: 200px;
+        margin: 0 0 400px;
+    }
+
+    #humanitarian-assistance-other-popup,
+    #humanitarian-assistance-cereal-popup,
+    #humanitarian-assistance-food-popup {
+        width: 55%;
+        height: 90%;
+    }
+
+}
+
+
+
+.upbtn {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: -80px;
+    right: 2%;
+    cursor: pointer;
+    border:3px solid #BFE2FF;
+    transition: all .4s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #ff7900;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+.upbtn:hover {
+    opacity: 1;
+    background-color: #c9a0dc;
+}

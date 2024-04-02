@@ -1,0 +1,280 @@
+
+
+
+.ask-your-self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.adoption-pet-main-title {
+    font-size: 30px;
+    max-width: 500px;
+    font-family: TavolgaFree, sans-serif;
+    color: #595959;
+    margin: 80px 0 35px 0;
+    text-align: center;
+}
+
+
+.adoption-pet-main-text {
+    font-size: 30px;
+    max-width: 800px;
+    font-family: TavolgaFree, sans-serif;
+    color: #595959;
+    margin: 20px 0 80px 0;
+    text-align: center;
+}
+
+.adoption-pet-second-text {
+    margin: 80px 0 35px 0;
+}
+
+.ask-your-self-content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.ask-your-self-box {
+    width: 550px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+
+}
+
+
+.ask-your-self-box-image-1,
+.ask-your-self-box-image-2,
+.ask-your-self-box-image-3,
+.ask-your-self-box-image-4,
+.ask-your-self-box-image-5,
+.ask-your-self-box-image-6 {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.ask-your-self-box-image-1 {
+    background-image: url("../images/ask-your-self-box-image-1.jpg");
+}
+
+.ask-your-self-box-image-2 {
+    background-image: url("../images/ask-your-self-box-image-2.jpg");
+}
+
+.ask-your-self-box-image-3 {
+    background-image: url("../images/ask-your-self-box-image-3.jpg");
+}
+
+.ask-your-self-box-image-4 {
+    background-image: url("../images/ask-your-self-box-image-4.jpg");
+}
+
+.ask-your-self-box-image-5 {
+    background-image: url("../images/ask-your-self-box-image-5.jpg");
+}
+
+.ask-your-self-box-image-6 {
+    background-image: url("../images/ask-your-self-box-image-6.jpg");
+}
+
+
+.ask-your-self-box-image-1::before,
+.ask-your-self-box-image-2::before,
+.ask-your-self-box-image-3::before,
+.ask-your-self-box-image-4::before,
+.ask-your-self-box-image-5::before,
+.ask-your-self-box-image-6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(151, 56, 235, 0.3); /* Устанавливаем прозрачность цвета фона */
+    /*background: rgba(201, 160, 220, 0.5); !* Устанавливаем прозрачность цвета фона *!*/
+    border-radius: 20px;
+}
+
+.ask-your-self-box-image-1:hover::before,
+.ask-your-self-box-image-2:hover::before,
+.ask-your-self-box-image-3:hover::before,
+.ask-your-self-box-image-4:hover::before,
+.ask-your-self-box-image-5:hover::before,
+.ask-your-self-box-image-6:hover::before {
+    background: rgba(151, 56, 235, 0.6); /* Устанавливаем прозрачность цвета фона */
+}
+
+
+.ask-your-self-box-description {
+    position: absolute;
+    top: 50%;
+    transition: top 0.6s; /* Добавляем плавный переход */
+    display: none;
+}
+
+
+.ask-your-self-box-title {
+    font-family: TavolgaFree, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    margin: -15px 0 0 0;
+    text-align: center;
+    transition: top 0.6s;
+}
+
+.ask-your-self-box-description {
+    font-family: GilroyMedium, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    width: 450px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    transition: 1s;
+}
+
+.adopt-pet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adopt-pet-text {
+    font-size: 30px;
+    max-width: 850px;
+    font-family: TavolgaFree, sans-serif;
+    color: #595959;
+    margin: 120px 0 35px 0;
+    text-align: center;
+}
+
+.adopt-pet-text-description {
+    font-size: 30px;
+    max-width: 800px;
+    font-family: TavolgaFree, sans-serif;
+    color: #595959;
+    margin: 20px 0 80px 0;
+    text-align: center;
+}
+
+.adopt-pet-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.adopt-pet-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+}
+
+.adopt-pet-step-4 {
+    display: flex;
+    align-self: center;
+}
+
+.adopt-pet-step-1-svg,
+.adopt-pet-step-2-svg,
+.adopt-pet-step-3-svg,
+.adopt-pet-step-4-svg {
+    height: 210px;
+    width: 250px;
+
+
+}
+
+.adopt-pet-step-1-svg img,
+.adopt-pet-step-2-svg img,
+.adopt-pet-step-3-svg img,
+.adopt-pet-step-4-svg img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.adopt-pet-step-1-description,
+.adopt-pet-step-2-description,
+.adopt-pet-step-3-description,
+.adopt-pet-step-4-description {
+    font-family: GilroyMedium, sans-serif;
+    font-size: 20px;
+    color: #595959;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.adopt-pet {
+    padding: 50px 0 0 0;
+}
+
+.adopt-pet-contacts {
+    padding: 50px 0;
+
+}
+
+.adopt-pet-contacts .container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.adopt-pet-contacts-description {
+    font-size: 30px;
+    max-width: 800px;
+    font-family: TavolgaFree, sans-serif;
+    color: #595959;
+    margin: 40px 0 50px 0;
+    text-align: center;
+}
+
+.adopt-pet-contacts-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.adopt-pet-contacts-block-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.adopt-pet-btn-success {
+    width: 60px;
+    height: 60px;
+}
+

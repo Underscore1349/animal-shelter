@@ -1,0 +1,571 @@
+@media screen and (max-width: 1399px) {
+
+    .about-pet-cat-paw1 {
+        top: 40%;
+        left: 40%;
+    }
+
+    .about-pet-cat-paw2 {
+        top: 140%;
+        left: 20%;
+    }
+
+    .about-pet-cat-paw3 {
+        top: 65%;
+        left: 50%;
+    }
+
+    .about-pet-cat-paw4 {
+        top: 120%;
+        left: 70%;
+    }
+
+}
+
+
+/* ? - 1299 */
+@media screen and (max-width: 1299px) {
+
+    video {
+        width: 1150px;
+        height: 300px;
+    }
+    
+    .about-pet-description-text {
+        width: 700px;
+    }
+
+    .about-pet-cat-paw1 {
+        top: 40%;
+        left: 20%;
+    }
+
+    .about-pet-cat-paw2 {
+        top: 140%;
+        left: 7%;
+    }
+
+    .about-pet-cat-paw3 {
+        top: 65%;
+        left: 50%;
+    }
+
+    .about-pet-cat-paw4 {
+        top: 120%;
+        left: 70%;
+    }
+
+}
+
+
+
+
+/* ? - 1199 */
+@media screen and (max-width: 1199px) {
+
+    .cats-items,
+    .dogs-items {
+
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    video {
+        width: 1000px;
+    }
+
+
+    .about-pet-description-text {
+        width: 650px;
+        margin: 35px 50px 0 0;
+    }
+
+    .btn-take-home {
+        margin-top: 35px;
+        text-align: center;
+    }
+
+}
+
+
+/*@media screen and (max-width: 1149px) {*/
+
+/*    video {*/
+/*        width: 1000px;*/
+/*    }*/
+
+/*}*/
+
+/* ? - 1199 */
+@media screen and (max-width: 1099px) {
+
+    video {
+        width: 950px;
+    }
+
+    .about-pet-description-text {
+        width: 550px;
+        font-size: 18px;
+    }
+
+
+
+}
+
+/* ? - 1199 */
+@media screen and (max-width: 999px) {
+
+    video {
+        width: 860px;
+    }
+
+
+    .about-pet-description-text {
+        width: 450px;
+        font-size: 18px;
+    }
+
+    .btn-take-home {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .about-pet-cat-paw1 {
+        top: 40%;
+        left: 20%;
+    }
+
+    .about-pet-cat-paw2 {
+        top: 140%;
+        left: 7%;
+    }
+
+    .about-pet-cat-paw3 {
+        top: 65%;
+        left: 40%;
+    }
+
+    .about-pet-cat-paw4 {
+        top: 120%;
+        left: 70%;
+    }
+
+}
+
+/* ? - 1199 */
+@media screen and (max-width: 899px) {
+
+    video {
+        width: 760px;
+    }
+
+    .about-pet-description-text {
+        width: 450px;
+        font-size: 18px;
+        display: none;
+    }
+
+    .btn-take-home {
+        margin: 205px 100px 0 0;
+        text-align: center;
+    }
+
+    .about-pet-description-text-hidden {
+        display: block;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+
+    .mfp-arrow-left {
+        left: 100px !important; /* Располагаем левую стрелку ближе к левому краю экрана */
+    }
+
+    .mfp-arrow-right {
+        right: 100px !important; /* Располагаем правую стрелку ближе к правому краю экрана */
+    }
+
+    .about-pet-cat-paw1 {
+        top: 90%;
+        left: 10%;
+    }
+
+    .about-pet-cat-paw2 {
+        top: 140%;
+        left: 7%;
+    }
+
+    .about-pet-cat-paw3 {
+        top: 35%;
+        left: 25%;
+    }
+
+    .about-pet-cat-paw4 {
+        top: 120%;
+        left: 70%;
+    }
+
+    .adoption-pet-main-text {
+        font-size: 30px;
+        max-width: 650px;
+    }
+
+    .adopt-pet-text {
+        font-size: 30px;
+        max-width: 700px;
+    }
+
+    .adopt-pet-text-description {
+        font-size: 30px;
+        max-width: 700px;
+    }
+
+
+}
+
+/* ? - 1199 */
+@media screen and (max-width: 799px) {
+
+    video {
+        width: 660px;
+    }
+
+
+    .btn-take-home {
+        margin: 205px 58px 0 0;
+        text-align: center;
+    }
+
+    .about-pet-description-text-hidden {
+        display: block;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+
+
+
+    .about-pet-cat-paw2 {
+        top: 180%;
+        left: 7%;
+    }
+
+
+    .about-pet-cat-paw4 {
+        top: 165%;
+        left: 57%;
+    }
+
+    .adoption-pet-main-text {
+        font-size: 30px;
+        max-width: 650px;
+    }
+
+}
+
+/* ? - 1199 */
+@media screen and (max-width: 699px) {
+
+    .about-pet .container{
+        /*width: 1170px;*/
+    text-align: center;
+    }
+
+    .about-pet-images {
+        display: none;
+    }
+
+    video {
+        width: 560px;
+    }
+
+    .btn-take-home {
+        margin: 205px 58px 0 0;
+        text-align: center;
+        display: none;
+    }
+
+    .about-pet-description-text-hidden {
+        display: block;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+
+    .btn-take-home-hidden {
+display: block;
+        margin: 30px 0 0 0;
+    }
+
+    .mfp-arrow-left {
+        left: 40px !important; /* Располагаем левую стрелку ближе к левому краю экрана */
+    }
+
+    .mfp-arrow-right {
+        right: 40px !important; /* Располагаем правую стрелку ближе к правому краю экрана */
+    }
+
+    .about-pet-cat-paw1 {
+        top: 83%;
+        left: 10%;
+    }
+
+    .about-pet-cat-paw2 {
+        top: 175%;
+        left: 7%;
+    }
+
+    .about-pet-cat-paw3 {
+        top: 32%;
+        left: 70%;
+    }
+
+    .about-pet-cat-paw4 {
+        top: 125%;
+        left: 57%;
+    }
+
+    .adoption-pet-main-title {
+        font-size: 28px;
+        max-width: 450px;
+    }
+
+    .adoption-pet-main-text {
+        font-size: 28px;
+        max-width: 600px;
+    }
+
+    .adopt-pet-text {
+        font-size: 28px;
+        max-width: 450px;
+    }
+
+    .adopt-pet-text-description {
+        font-size: 28px;
+        max-width: 600px;
+    }
+
+}
+
+/* ? - 1199 */
+@media screen and (max-width: 599px) {
+
+    video {
+        width: 460px;
+    }
+
+    .about-pet-cat-paw1 {
+        top: 83%;
+        left: 10%;
+    }
+
+    .about-pet-cat-paw2 {
+        top: 222%;
+        left: 7%;
+    }
+
+    .about-pet-cat-paw3 {
+        top: 32%;
+        left: 70%;
+    }
+
+    .about-pet-cat-paw4 {
+        top: 125%;
+        left: 57%;
+    }
+
+    .adoption-pet-main-title {
+        font-size: 28px;
+        max-width: 400px;
+    }
+
+    .adoption-pet-main-text {
+        font-size: 28px;
+        max-width: 500px;
+    }
+
+    .adopt-pet-text {
+        font-size: 28px;
+        max-width: 450px;
+    }
+
+    .adopt-pet-text-description {
+        font-size: 28px;
+        max-width: 500px;
+    }
+
+    .ask-your-self-box {
+        width: 450px;
+        height: 350px;
+    }
+
+    .ask-your-self-box-title {
+        font-size: 22px;
+    }
+
+    .ask-your-self-box-description {
+        font-size: 18px;
+        width: 420px;
+    }
+
+}
+
+
+/* ? - 1199 */
+@media screen and (max-width: 499px) {
+
+    .cats-item-container,
+    .dogs-item-container,
+    .cats-item-therapy {
+        width: 300px;
+    }
+
+    .cats-item,
+    .dogs-item {
+        width: 300px;
+    }
+
+    .cats-item img,
+    .dogs-item img {
+        width: 100%;
+    }
+
+    .about-pet-description-text-hidden {
+        display: block;
+        text-align: center;
+        margin: 50px 0 0 0;
+        font-size: 17px;
+        width: 400px;
+    }
+
+    .mfp-arrow-left {
+        left: 10px !important; /* Располагаем левую стрелку ближе к левому краю экрана */
+    }
+
+    .mfp-arrow-right {
+        right: 10px !important; /* Располагаем правую стрелку ближе к правому краю экрана */
+    }
+
+    video {
+        width: 360px;
+    }
+
+    .adoption-pet-main-text {
+        font-size: 28px;
+        max-width: 400px;
+    }
+
+    .ask-your-self-box {
+        width: 350px;
+        height: 300px;
+    }
+
+    .adopt-pet-text {
+        font-size: 28px;
+        max-width: 400px;
+    }
+
+    .adopt-pet-text-description {
+        font-size: 26px;
+        max-width: 400px;
+    }
+
+    .ask-your-self-box-title {
+        font-size: 20px;
+
+    }
+
+    .ask-your-self-box-description {
+        font-size: 16px;
+        width: 320px;
+    }
+
+}
+
+@media screen and (max-width: 399px) {
+
+    .mfp-arrow-left {
+        left: 3px !important; /* Располагаем левую стрелку ближе к левому краю экрана */
+    }
+
+    .mfp-arrow-right {
+        right: 3px !important; /* Располагаем правую стрелку ближе к правому краю экрана */
+    }
+
+    video {
+        width: 280px;
+    }
+
+    .adoption-pet-main-text {
+        font-size: 26px;
+        max-width: 300px;
+    }
+
+    .adopt-pet-text {
+        font-size: 26px;
+        max-width: 300px;
+    }
+
+    .adopt-pet-text-description {
+        font-size: 26px;
+        max-width: 300px;
+    }
+
+    .ask-your-self-box {
+        width: 280px;
+        height: 280px;
+    }
+
+    .ask-your-self-box-title {
+        font-size: 18px;
+
+    }
+
+    .ask-your-self-box-description {
+        font-size: 14px;
+        width: 260px;
+    }
+
+    .about-pet-cat-paw1,
+    .about-pet-cat-paw2,
+    .about-pet-cat-paw3,
+    .about-pet-cat-paw4 {
+     display: none;
+    }
+
+
+
+    .acor-body img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 349px) {
+
+.cats-item-container,
+.dogs-item-container,
+.cats-item-therapy {
+    width: 280px;
+}
+
+    .cats-item,
+    .dogs-item {
+        width: 280px;
+    }
+
+    .cats-button {
+        width: 250px;
+    }
+
+    /*.cats-item img {*/
+    /*    width: 280px;*/
+    /*}*/
+
+    /*.cats-item img {*/
+    /*    width: 100%;*/
+    /*}*/
+
+}
